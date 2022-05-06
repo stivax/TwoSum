@@ -13,16 +13,18 @@ public class TwoSum {
     }
 
     private static int[] twoSum(int[] nums, int target) {
-        int[] res = new int[2];
+        int[] pairElements = new int[2];
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target && i != j) {
-                    res = new int[]{i, j};
+                    pairElements = new int[]{i, j};
                 }
 
             }
         }
-        return res;
+        return pairElements;
     }
 
+    public TwoSum() {
+    }
 }
